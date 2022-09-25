@@ -5,20 +5,20 @@ source ./utils/syncer.sh
 
 function action {
 	if [ $1 == "1" ]; then
-		list_connections;
+		showConnections;
 	elif [ $1 == "2" ]; then
-		add_connection;
+		addConnection;
 	elif [ $1 == "3" ]; then
-		remove_connection;
+		removeConnection;
 	elif [ $1 == "4" ]; then
-		sync_connections;
+		syncConnections;
 	else
 		echo "Not available";
 	fi
 }
 
 while true; do
-	echo "1. List all connections";
+	echo "1. Show all connections";
 	echo "2. Add a new connection";
 	echo "3. Remove a connection";
 	echo "4. Sync connections";
